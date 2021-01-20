@@ -18,7 +18,7 @@ You can view [a live version of this project here](https://content.codecademy.co
 
 2.  Save the client secret you obtained from the Foursquare API to const `clientSecret`.
 
-3.  Create a const called `url`. Check the Foursquare documentation to see the explore venue API endpoint.
+3.  Create a const called `url`. Check the Foursquare documentation to see the [explore venue API endpoint](https://developer.foursquare.com/docs/api-reference/venues/explore/).
 
 Add the near parameter without a value. To add a query to the end of a URL, be sure to use `?` followed by the first key (near) and an `=`. You’ll add the value of the near parameter to this URL string when you make the request itself.
 
@@ -43,7 +43,7 @@ Turn `getVenues()` into an asynchronous function that returns a Promise.
 - a `limit` parameter with the number of venues you wish to return (use 10)
 - the `client_id` parameter and your client ID
 - the `client_secret` parameter and your client secret
-- the v (version) parameter and today’s date in this format: `YYYYMMDD`
+- the `v` (version) parameter and today’s date in this format: `YYYYMMDD`
 - Each key-value parameter pair should be joined to the others with `&`. For instance, to request 5 venues with a client ID of 1234, that portion of the URL would be `limit=5&client_id=1234`.
 
 9.  Add `try/catch` statements with empty code blocks.
