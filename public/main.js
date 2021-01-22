@@ -63,8 +63,6 @@ const renderVenues = (venues) => {
     const venue = venues[index];
     const venueIcon = venue.categories[0].icon;
     const venueImgSrc = venueIcon.prefix + 'bg_64' + venueIcon.suffix;
-    // const venueImg = venue.photos;
-    // const venueImgSrc = venueImg.prefix + '350x400' + venueImg.suffix;
     let venueContent = createVenueHTML(venue.name, venue.location, venueImgSrc,);
     $venue.append(venueContent);
   });
